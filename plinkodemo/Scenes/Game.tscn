@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkumtiwsyrlwx"]
+
+[ext_resource type="Script" path="res://addons/2d_shapes/shapes/Ellipse.gd" id="1_72j1k"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_nxask"]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("1_nxask")
+
+[node name="Ellipse" type="Node2D" parent="Player"]
+script = ExtResource("1_72j1k")
